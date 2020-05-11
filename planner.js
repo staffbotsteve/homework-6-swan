@@ -1,8 +1,28 @@
 console.log('moment()', moment().format("MMMM Do YYYY"))
 $("#dateHeading").text(moment().format("MMMM Do YYYY"))
 
+$(document).ready(function() { 
+    curHour = moment().hour()
+    
+    for (let index = 1; index < (curHour); index++) {
+        row = document.getElementById(index).parentElement.parentElement
+        console.log(row)
+        row.setAttribute('style', 'background-color: red; color: white')
+    };
+
+    row = document.getElementById(curHour).parentElement.parentElement
+    row.setAttribute('style', 'background-color: green; color: white')
+
+    for (let index = curHour+1; index < 25; index++) {
+        row = document.getElementById(index).parentElement.parentElement
+        console.log(row)
+        row.setAttribute('style', 'background-color: blue; color: white')
+    };
+});
+
 $('.eventEntry').click(function(){
     var entry = $(this).text();
+    
     console.log('entry',entry)
     // $(this).html('');
     // $('<input></input>')
