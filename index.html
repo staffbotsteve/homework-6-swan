@@ -15,7 +15,7 @@
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-3" style="text-align:center">Workday Planner</h1>
-            <p class="lead" style="text-align:center">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p class="lead" style="text-align:center">Enter your event and press [SAVE].</p>
             <!-- This shows the current day -->
             <div id="dateDiv">
               <h4 class="display-3" style="text-align:center" id="dateHeading">
@@ -40,9 +40,9 @@
                   </thead>
                   <tbody>
 
-                    <tr>
+                    <tr id="row1">
                       <th scope="row" class='eventEntry' id='timeH1'>1</th>
-                      <td class='eventEntry' id='timeD1.1'><input type="text" size="30" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none;" /></td>
+                      <td class='eventEntry' id='timeD1.1'><input class="eventInput" id="input1" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD1.2'>
                         <button type="button" class="btn btn-light" id="1" style="float: right;">Save</button>
                         </button>
@@ -50,7 +50,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH2'>2</th>
-                      <td class='eventEntry' id='timeD2.1'></td>
+                      <td class='eventEntry' id='timeD2.1'><input class="eventInput" id="input2" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD2.2'>
                         <button type="button" class="btn btn-light" id="2" style="float: right;">Save</button>
                         </button>
@@ -58,7 +58,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH3'>3</th>
-                      <td class='eventEntry' id='timeD3.1'></td>
+                      <td class='eventEntry' id='timeD3.1'><input class="eventInput" id="input3" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD3.2'>
                         <button type="button" class="btn btn-light" id="3" style="float: right;">Save</button>
                         </button>
@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH4'>4</th>
-                      <td class='eventEntry' id='timeD4.1'></td>
+                      <td class='eventEntry' id='timeD4.1'><input class="eventInput" id="input4" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD4.2'>
                         <button type="button" class="btn btn-light" id="4" style="float: right;">Save</button>
                         </button>
@@ -74,7 +74,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH5'>5</th>
-                      <td class='eventEntry' id='timeD5.1'></td>
+                      <td class='eventEntry' id='timeD5.1'><input class="eventInput" id="input5" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD5.2'>
                         <button type="button" class="btn btn-light" id="5" style="float: right;">Save</button>
                         </button>
@@ -82,7 +82,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH6'>6</th>
-                      <td class='eventEntry' id='timeD6.1'></td>
+                      <td class='eventEntry' id='timeD6.1'><input class="eventInput" id="input6" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD6.2'>
                         <button type="button" class="btn btn-light" id="6" style="float: right;">Save</button>
                         </button>
@@ -90,7 +90,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH7'>7</th>
-                      <td class='eventEntry' id='timeD7.1'></td>
+                      <td class='eventEntry' id='timeD7.1'><input class="eventInput" id="input7" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD7.2'>
                         <button type="button" class="btn btn-light" id="7" style="float: right;">Save</button>
                         </button>
@@ -98,7 +98,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH8'>8</th>
-                      <td class='eventEntry' id='timeD8.1'></td>
+                      <td class='eventEntry' id='timeD8.1'><input class="eventInput" id="input8" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD8.2'>
                         <button type="button" class="btn btn-light" id="8" style="float: right;">Save</button>
                         </button>
@@ -106,7 +106,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH9'>9</th>
-                      <td class='eventEntry' id='timeD9.1'></td>
+                      <td class='eventEntry' id='timeD9.1'><input class="eventInput" id="input9" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD9.2'>
                         <button type="button" class="btn btn-light" id="9" style="float: right;">Save</button>
                         </button>
@@ -114,7 +114,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH10'>10</th>
-                      <td class='eventEntry' id='timeD10.1'></td>
+                      <td class='eventEntry' id='timeD10.1'><input class="eventInput" id="input10" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD10.2'>
                         <button type="button" class="btn btn-light" id="10" style="float: right;">Save</button>
                         </button>
@@ -122,7 +122,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH11'>11</th>
-                      <td class='eventEntry' id='timeD11.1'></td>
+                      <td class='eventEntry' id='timeD11.1'><input class="eventInput" id="input11" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD11.2'>
                         <button type="button" class="btn btn-light" id="11" style="float: right;">Save</button>
                         </button>
@@ -130,7 +130,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH12'>12</th>
-                      <td class='eventEntry' id='timeD12.1'></td>
+                      <td class='eventEntry' id='timeD12.1'><input class="eventInput" id="input12" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD12.2'>
                         <button type="button" class="btn btn-light" id="12" style="float: right;">Save</button>
                         </button>
@@ -138,7 +138,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH13'>13</th>
-                      <td class='eventEntry' id='timeD13.1'></td>
+                      <td class='eventEntry' id='timeD13.1'><input class="eventInput" id="input13" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD13.2'>
                         <button type="button" class="btn btn-light" id="13" style="float: right;">Save</button>
                         </button>
@@ -146,7 +146,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH14'>14</th>
-                      <td class='eventEntry' id='timeD14.1'></td>
+                      <td class='eventEntry' id='timeD14.1'><input class="eventInput" id="input14" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD14.2'>
                         <button type="button" class="btn btn-light" id="14" style="float: right;">Save</button>
                         </button>
@@ -154,7 +154,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH15'>15</th>
-                      <td class='eventEntry' id='timeD15.1'></td>
+                      <td class='eventEntry' id='timeD15.1'><input class="eventInput" id="input15" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD15.2'>
                         <button type="button" class="btn btn-light" id="15" style="float: right;">Save</button>
                         </button>
@@ -162,7 +162,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH16'>16</th>
-                      <td class='eventEntry' id='timeD16.1'></td>
+                      <td class='eventEntry' id='timeD16.1'><input class="eventInput" id="input16" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD16.2'>
                         <button type="button" class="btn btn-light" id="16" style="float: right;">Save</button>
                         </button>
@@ -170,7 +170,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH17'>17</th>
-                      <td class='eventEntry' id='timeD17.1'></td>
+                      <td class='eventEntry' id='timeD17.1'><input class="eventInput" id="input17" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD17.2'>
                         <button type="button" class="btn btn-light" id="17" style="float: right;">Save</button>
                         </button>
@@ -178,7 +178,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH18'>18</th>
-                      <td class='eventEntry' id='timeD18.1'></td>
+                      <td class='eventEntry' id='timeD18.1'><input class="eventInput" id="input18" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD18.2'>
                         <button type="button" class="btn btn-light" id="18" style="float: right;">Save</button>
                         </button>
@@ -186,7 +186,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH19'>19</th>
-                      <td class='eventEntry' id='timeD19.1'></td>
+                      <td class='eventEntry' id='timeD19.1'><input class="eventInput" id="input19" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD19.2'>
                         <button type="button" class="btn btn-light" id="19" style="float: right;">Save</button>
                         </button>
@@ -194,7 +194,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH20'>20</th>
-                      <td class='eventEntry' id='timeD20.1'></td>
+                      <td class='eventEntry' id='timeD20.1'><input class="eventInput" id="input20" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD20.2'>
                         <button type="button" class="btn btn-light" id="20" style="float: right;">Save</button>
                         </button>
@@ -202,7 +202,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH21'>21</th>
-                      <td class='eventEntry' id='timeD21.1'></td>
+                      <td class='eventEntry' id='timeD21.1'><input class="eventInput" id="input21" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD21.2'>
                         <button type="button" class="btn btn-light" id="21" style="float: right;">Save</button>
                         </button>
@@ -210,7 +210,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH22'>22</th>
-                      <td class='eventEntry' id='timeD22.1'></td>
+                      <td class='eventEntry' id='timeD22.1'><input class="eventInput" id="input22" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD22.2'>
                         <button type="button" class="btn btn-light" id="22" style="float: right;">Save</button>
                         </button>
@@ -218,7 +218,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH23'>23</th>
-                      <td class='eventEntry' id='timeD23.1'></td>
+                      <td class='eventEntry' id='timeD23.1'><input class="eventInput" id="input23" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD23.2'>
                         <button type="button" class="btn btn-light" id="23" style="float: right;">Save</button>
                         </button>
@@ -226,7 +226,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class='eventEntry' id='timeH24'>24</th>
-                      <td class='eventEntry' id='timeD24.1'></td>
+                      <td class='eventEntry' id='timeD24.1'><input class="eventInput" id="input24" type="text" size="60" style="padding: 0%; margin: 0%; height: 100%; border: none; background: none; color:white;" /></td>
                       <td id='timeid='timeD24.2'>
                         <button type="button" class="btn btn-light" id="24" style="float: right;">Save</button>
                         </button>
